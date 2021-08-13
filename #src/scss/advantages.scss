@@ -1,0 +1,88 @@
+.advantages {
+    background-color: #f4f4f4;
+    &__header {
+        max-width: 1145px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__inner {
+        margin-bottom: 60px;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        width: 360px;
+        max-width: 360px;
+        text-align: center;
+        @media (max-width: 739px) {
+            margin-bottom: 30px;
+            &:nth-child() {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    &__img {
+        margin-bottom: 15px;
+    }
+    &__row-one {
+        order: 1;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    &__row-two {
+        order: 3;
+        flex-wrap: wrap;
+    }
+    &__row-three {
+        order: 2;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        background: #f79f33;
+        color: #000;
+        position: relative;
+        overflow: hidden;
+        &::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            top: -180px;
+            left: 0;
+            width: 30px;
+            height: 100%;
+            background-color: #fff;
+            animation: shiny 3s ease-in-out infinite;
+            animation: shiny 4s ease-in-out infinite;
+        }
+        @media (min-width: 1000px) {
+            &:hover {
+                background-color: #ffb458;
+            }
+        }
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.advantages__img {
+}
+.advantages__box {
+}
+.advantages__box-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
+
+    <title>Ремонт квартир и домов</title>
+</head>
+
+<body>
+    <div class="wrapper">     
+        <main class="content">
+            <div class="content__container container">
+                <div class="content__inner">
+                    <img class="content__inner-img lazy" src="img/bg/1.webp" alt="">
+                    <div class="content__info">
+                        <h1 class="content__info-title" 
+                            data-aos="fade-up" 
+                            data-aos-duration="800"
+                            data-aos-delay="300">Мастер Ремонтов</h1>
+                        <p class="content__info-suptitle" 
+                            data-aos="fade-up" 
+                            data-aos-duration="800"
+                            data-aos-delay="400">Тебе предстоит ремонт и ты не знаешь с чего начать?</p>
+                        <p class="content__info-text" 
+                            data-aos="fade-up" 
+                            data-aos-duration="800" 
+                            data-aos-delay="500">
+                            Подберите профессиональную бригаду для Вашего объекта за 3 клика
+                        </p>
+                    </div>
+                    <div class="content__about">
+                        <div class="content__about-links" data-aos="fade-down">
+                            <div class="content__about-link phone">
+                                <img class="content__about-img" src="img/icon/phone.svg" alt="" 
+                                    data-aos="fade-right"
+                                    data-aos-delay="800" 
+                                    data-aos-duration="800">
+                                <a class="content__about-number" href="tel:999999">99-99-99</a>
+                            </div>
+                            <div class="content__about-link mail"
+                            >
+                                <img class="content__about-img" src="img/icon/mail.svg" alt=""
+                                data-aos="fade-right"
+                                data-aos-delay="800" 
+                                data-aos-duration="800">
+                                <a class="content__about-mail" href="mailto:pochta@mail.ru">pochta@mail.ru</a>
+                            </div>
+                        </div>
+                        <div class="content__about-form">
+                            <p class="content__about-text" 
+                                data-aos="fade-down" 
+                                data-aos-delay="900"
+                                data-aos-duration="800"
+                                >Введи данные о проекте и получи профессиональную ремонтную
+                                бригаду
+                                по фиксированной цене!</p>
+                            <form class="form" action="#" id="form"
+                                data-aos="fade-down" 
+                                data-aos-delay="1000" 
+                                data-aos-duration="800" 
+                            >
+                                <div class="form__inner">
+                                    <div class="form__box">
+                                        <div class="form__item">
+                                            <label class="form__label" for="formS" >Площадь квартиры для ремонта</label>
+                                            <input class="form__input _req" type="text" name="S" id="formS" placeholder="40">
+                                        </div>
+                                        <div class="form__item">
+                                            <label class="form__label" for="formS">Тип ремонта</label>
+                                            <div class="__select" data-state="">
+                                                <div class="__select__title" data-default="Option 0">Капитальный ремонт
+                                                </div>
+                                                <div class="__select__content">
+                                                    <label for="singleSelect" class="__select__label"></label>
+                                                    <input id="singleSelect0" class="__select__input" type="radio"
+                                                        name="singleSelect" checked>
+                                                    <label for="singleSelect0" class="__select__label">Капитальный
+                                                        ремонт
+                                                    </label>
+
+                                                    <input id="singleSelect1" class="__select__input" type="radio"
+                                                        name="singleSelect">
+                                                    <label for="singleSelect1" class="__select__label">Дизайн-проект
+                                                    </label>
+
+                                                    <input id="singleSelect2" class="__select__input" type="radio"
+                                                        name="singleSelect">
+                                                    <label for="singleSelect2" class="__select__label">Контроль
+                                                        строителей
+                                                        (технадзор)
+                                                    </label>
+
+                                                    <input id="singleSelect3" class="__select__input" type="radio"
+                                                        name="singleSelect">
+                                                    <label for="singleSelect3" class="__select__label">Капитальный
+                                                        ремонт
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__item">
+                                            <label class="form__label" for="formPhone">Телефон для обратной
+                                                связи</label>
+                                            <input class="form__input _req" type="text" name="phone" id="formPhone"
+                                                placeholder="+7 (999) 999-99-99">
+                                        </div>
+                                        <div class="form__item">
+                                            <div class="options">
+                                                <div class="options__item">
+                                                    <input id="formWorkDesign" checked type="radio" name="work"
+                                                        value="Дизайн-проект" class="options__input">
+                                                    <label for="formWorkDesign"
+                                                        class="options__label"><span>Дизайн-проект</span></label>
+                                                </div>
+                                                <div class="options__item">
+                                                    <input id="formWorkControl" type="radio" name="work" value="Контроль строителей
+                                                    (технадзор)" class="options__input">
+                                                    <label for="formWorkControl" class="options__label"><span>Контроль
+                                                            строителей
+                                                            (технадзор)</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="form__btn btn" type="submit">Подобрать мастера ремонта</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="works page">
+            <div class="works__container container" > 
+                    <h2 class="works__title title" 
+                        data-aos="fade-down"
+                        data-aos-offset="200"
+                    >Примеры наших работ </h2>
+                <div class="works__inner" >
+                    <div class="works__items">
+                        <div class="works__item">
+                            <div class="works works__img"
+                            data-aos="flip-left"
+                            data-aos-delay="400"
+                            data-aos-anchor-placement="top-center"
+                            >
+                                <button class=" works__btn-popup" type="button" data-popup="popup-order"></button>
+                                    <picture>
+                                        <source type="image/webp" data-srcset="img/works/1.webp">
+                                        <img class="works__img lazy"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            data-src="img/works/1.jpg" alt="">
+                                    </picture>
+                            </div>
+                            <div class="works__adress">
+                                <p class="works__text">
+                                    Адрес
+                                </p>
+                            </div>
+                        </div>
+                        <div class="works__item">
+                            <div class="works works__img"
+                            data-aos="flip-left"
+                            data-aos-delay="400"
+                            data-aos-anchor-placement="top-center"
+                            >
+                                <button class=" works__btn-popup" type="button" data-popup="popup-order"></button>
+                                    <picture>
+                                        <source type="image/webp" data-srcset="img/works/2.webp">
+                                        <img class="works__img lazy"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            data-src="img/works/2.jpg" alt="">
+                                    </picture>
+                            </div>
+                            <div class="works__adress">
+                                <p class="works__text">
+                                    Адрес
+                                </p>
+                            </div>
+                        </div>
+                        <div class="works__item">
+                            <div class="works works__img"
+                            data-aos="flip-left"
+                            data-aos-delay="800"
+                            data-aos-anchor-placement="top-center"
+                            >
+                                <button class=" works__btn-popup" type="button" data-popup="popup-order"></button>
+                                    <picture>
+                                        <source type="image/webp" data-srcset="img/works/3.webp">
+                                        <img class="works__img lazy"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            data-src="img/works/3.jpg" alt="">
+                                    </picture>
+                            </div>
+                            <div class="works__adress">
+                                <p class="works__text">
+                                    Адрес
+                                </p>
+                            </div>
+                        </div>
+                        <div class="works__item">
+                            <div class="works works__img"
+                            data-aos="flip-left"
+                            data-aos-delay="400"
+                            data-aos-anchor-placement="top-center"
+                            >
+                                <button class=" works__btn-popup" type="button" data-popup="popup-order"></button>
+                                    <picture>
+                                        <source type="image/webp" data-srcset="img/works/4.webp">
+                                        <img class="works__img lazy"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            data-src="img/works/4.jpg" alt="">
+                                    </picture>
+                            </div>
+                            <div class="works__adress">
+                                <p class="works__text">
+                                    Адрес
+                                </p>
+                            </div>
+                        </div>
+                        <div class="works__item">
+                            <div class="works works__img"
+                            data-aos="flip-left"
+                            data-aos-delay="600"
+                            data-aos-anchor-placement="top-center"
+                            >
+                                <button class=" works__btn-popup" type="button" data-popup="popup-order"></button>
+                                    <picture>
+                                        <source type="image/webp" data-srcset="img/works/5.webp">
+                                        <img class="works__img lazy"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            data-src="img/works/5.jpg" alt="">
+                                    </picture>
+                            </div>
+                            <div class="works__adress">
+                                <p class="works__text">
+                                    Адрес
+                                </p>
+                            </div>
+                        </div>
+                        <div class="works__item">
+                            <div class="works works__img"
+                            data-aos="flip-left"
+                            data-aos-delay="800"
+                            data-aos-anchor-placement="top-center"
+                            >
+                                <button class=" works__btn-popup" type="button" data-popup="popup-order"></button>
+                                    <picture>
+                                        <source type="image/webp" data-srcset="img/works/6.webp">
+                                        <img class="works__img lazy"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            data-src="img/works/6.jpg" alt="">
+                                    </picture>
+                            </div>
+                            <div class="works__adress">
+                                <p class="works__text">
+                                    Адрес
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="works__btn btn popup-link" href="#somepopup"
+                    data-aos="zoom-in"
+                >Подобрать мастера ремонта</a>
+            </div>
+        </div>
+        <div class="advantages page">
+            <div class="advantages__container container">
+                <div class="advantages__header">
+                    <h2 class="advantages__title title"
+                        data-aos="fade-down"
+                    >Почему нас выбирают</h2>
+                    <p class="advantages__text text"  
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                    >Мы экономим Ваши деньги и время на созвоны и контроль ремонта - все
+                        происходит в 1 месте на нашей платформе и в удобном приложении</p>  
+                </div>
+                <div class="advantages__inner">
+                    <div class="advantages__items">
+                        <div class="advantages__row-one row">
+                            <div class="advantages__item ">
+                                <div class="advantages__img item1"
+                                    data-aos="zoom-in"
+                                    data-aos-delay="600"
+                                >
+                                    <img class="advantages__img-icon" src="img/icon/1.svg" alt="" width="120px" height="120px">
+                                </div>
+                                <div class="advantages__box"
+                                    data-aos="fade-up"
+                                    data-aos-delay="700"
+                                >
+                                    <p class="advantages__box-text">Он-лайн платформа ремонтов ремонтов, где вам будет
+                                        подобрана лучшая строительная бригада по заранее согласованным параметрам</p>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__img"                         
+                                    data-aos="zoom-in"    
+                                    data-aos-delay="800"
+                                >
+                                    <img class="advantages__img-icon" src="img/icon/2.svg" alt="" width="120px" height="120px">
+                                </div>
+                                <div class="advantages__box"
+                                    data-aos="fade-up"
+                                    data-aos-delay="900"
+                                >
+                                    <p class="advantages__box-text">Ремонт по фиксированной цене согласно выбранному
+                                        типу ремонта</p>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__img"
+                                    data-aos="zoom-in"    
+                                    data-aos-delay="1000"
+                                >
+                                    <img class="advantages__img-icon" src="img/icon/3.svg" alt="" width="120px" height="120px">
+                                </div>
+                                <div class="advantages__box"
+                                    data-aos="fade-up"
+                                    data-aos-delay="1100"
+                                >
+                                    <p class="advantages__box-text">Все ремонтники проходят проверку и подписывают
+                                        гарантию выполнения работ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__row-two row">
+                            <div class="advantages__item">
+                                <div class="advantages__img"
+                                    data-aos="zoom-in-down"
+                                    data-aos-anchor-placement="center-bottom">
+                                    <img class="advantages__img-icon" src="img/icon/6.svg" alt="" width="120px" height="120px">
+                                </div>
+                                <div class="advantages__box"
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="center-bottom"
+                                >
+                                    <p class="advantages__box-text">Ремонты под ключ за 3 клика</p>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__img"
+                                    data-aos="zoom-in-down"
+                                    data-aos-anchor-placement="center-bottom"
+                                    >
+                                    <img class="advantages__img-icon" src="img/icon/7.svg" alt="" width="120px" height="120px">
+                                </div>
+                                <div class="advantages__box"
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="center-bottom"
+                                >
+                                    <p class="advantages__box-text">Подключай дополнительную опцию «Технадзор» и получай
+                                        свежие фото и видео твоего ремонта в режиме онлайн</p>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__img"
+                                    data-aos="zoom-in-down"
+                                    data-aos-anchor-placement="center-bottom"
+                                >
+                                    <img class="advantages__img-icon" src="img/icon/8.svg" alt="" width="120px" height="120px">
+                                </div>
+                                <div class="advantages__box"
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="center-bottom"
+                                >
+                                    <p class="advantages__box-text">Ремонт без головной боли и трат времени - вся
+                                        коммуникация на 1 платформе</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__row-three row">
+                            <div class="advantages__item">
+                                <div class="advantages__img"
+                                    data-aos="zoom-in-down"
+                                    data-aos-anchor-placement="center-bottom"
+                                >
+                                    <img class="advantages__img-icon" src="img/icon/4.svg" alt="" width="120px" height="120px">
+                                </div>
+                                <div class="advantages__box"
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="center-bottom"
+                                >
+                                    <p class="advantages__box-text">Общение с ремонтниками и все согласования в 1 месте
+                                        на нашей платформе </p>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__img"
+                                    data-aos="zoom-in-down"
+                                    data-aos-anchor-placement="center-bottom"
+                                >
+                                    <img class="advantages__img-icon" src="img/icon/5.svg" alt="" width="120px" height="120px">
+                                </div>
+                                <div class="advantages__box"
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="center-bottom">
+                                    <p class="advantages__box-text">Только профессиональные бригады с опытом работы
+                                        более 5 лет</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                </div>
+                <a class="advantages__btn btn popup-link" href="#somepopup"
+                    data-aos="zoom-in"
+                    data-aos-anchor-placement="center-bottom"
+                >Подобрать мастера ремонта</a>
+            </div>
+        </div>
+        
+    </div>
+    <div id="somepopup" class="popup popup__sometext">
+        <div class="popup__body">
+            <div class="popup__content">
+                <button class="btn-close popup__btn-close"></button>
+                 <div class="call" id="call">
+                     <form id="call" action="#" class="form__body">
+                        <h2 class="call__title">Заказать звонок</h2>
+                        <div class="call__item call-phone">
+                            <label for="" class="call__label">Ваш номер телефона:</label>
+                            <input type="text" name="phone" id="formPhone"
+                            placeholder="+7 (999) 999-99-99" class="form__input call__input _reqC">
+                        </div>
+                        <button class="form__btn btn call__btn" type="submit">Подобрать мастера ремонта</button>
+                     </form>
+                 </div>
+            </div>
+        </div>
+    </div> 
+    <div class="popup popup__work popup-order">
+        <div class="popup__work-wrapper">
+            <div class="popup__work-inner">
+                <div class="popup__work-content">
+                    <button class="btn-close popup__btn-close popup-close"></button>
+                    <div class="order">
+                        <picture>
+                            <source type="image/webp">
+                            <img class="order__img lazy"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <script src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
